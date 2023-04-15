@@ -29,8 +29,9 @@ global style
 */
 
 :root {
+  --yellow: #ffaa00;
   --primary-color: rgb(25, 176, 83);
-  --primary-color2: rgba(4, 88, 9, 0.983);
+  --primary-color2: #047e31;
   --black-gray: rgb(19, 18, 18);
   --black-gray2: rgb(48, 46, 46);
   --black-gray3: rgb(43, 42, 42);
@@ -63,8 +64,8 @@ global style
 }
 
 .section-hidden {
-  opacity: 0;
-  transform: translateY(4rem);
+  /* opacity: 0;
+  transform: translateY(4rem); */
 }
 
 /* main {
@@ -467,8 +468,55 @@ banner
   .banner .banner-sec .banner-info p {
     font-size: 1.6rem;
   }
+  .banner-slide img {
+    width: 80vw;
+    height: 60vh;
+    object-fit: cover;
+    margin-top: 2rem;
+    overflow-x: hidden;
+  }
 }
 
+/* 
+
+======================
+explore
+======================
+*/
+.expore-links .img-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 1rem;
+}
+.expore-links .img-info img {
+  width: 10%;
+}
+.expore-links .img-info h3 {
+  color: var(--primary-color2);
+}
+.expore-links p {
+  /* color: var(--primary-color2); */
+  text-align: left;
+}
+
+.link-more {
+  color: var(--yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+@media screen and (min-width: 760px) {
+  .explore-sec {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    align-items: center;
+    place-content: center;
+    gap: 0 2rem;
+  }
+}
 /* 
 ======================
 about
@@ -483,6 +531,7 @@ about
 }
 
 .about .about-sec p {
+  text-align: left;
 }
 
 @media screen and (min-width: 760px) {
@@ -519,6 +568,7 @@ abjectives
 
 .objectives p {
   color: var(--white-color2);
+  text-align: left;
 }
 
 .objectives ul li {
@@ -542,6 +592,7 @@ film
 }
 .film p {
   color: var(--black-gray2);
+  text-align: left;
 }
 
 /* 
@@ -671,7 +722,7 @@ footer
 }
 
 .footer .email-add a {
-  color: yellow;
+  color: var(--yellow);
 }
 .footer .inquiries span .loc {
   color: var(--primary-color);
