@@ -57,7 +57,8 @@ global style
   margin: 0 auto;
   max-width: 1120px;
 }
-.section-title h2 {
+.section-title h2,
+h5 {
   text-align: center;
   font-weight: bold;
   margin-bottom: 1rem;
@@ -772,9 +773,12 @@ portal
 .profile h2 {
   color: var(--primary-color);
 }
-.profile h2,
-p {
+.profile h2 {
   text-align: center;
+}
+
+h5 {
+  color: var(--primary-color);
 }
 
 .pro-sec .student-pro .profile-pic img {
@@ -850,5 +854,32 @@ p {
     margin: 0 auto;
     position: relative;
     margin-bottom: 2rem;
+  }
+}
+
+/* 
+======================
+program
+======================
+*/
+
+.program p {
+  text-align: left;
+}
+.line {
+  margin: 2rem 0;
+  width: 60%;
+  height: 1px;
+  background-color: var(--black-gray2);
+}
+
+@media screen and (min-width: 760px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    place-content: center;
+    gap: 4rem;
   }
 }
